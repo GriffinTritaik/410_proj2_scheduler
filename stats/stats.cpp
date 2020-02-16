@@ -1,8 +1,28 @@
 /*
  * Stats.cpp
  *
- *  Created on: Sep 10, 2019
- *      Author: keith
+ *  Created on: Feb 16, 2020
+ *      Author: Griffin Tritaik
  */
 
-//TODO fill in content
+#include "../includes/stats.h"
+
+Stats::Stats(std::vector<PCB> &finished_vector){
+
+}
+
+void Stats::showAllProcessInfo(){
+
+}
+
+float Stats::get_av_response_time(){
+	return 0;
+}
+
+float Stats::get_av_turnaround_time(){
+	return 0;
+}
+
+float Stats::get_av_wait_time(){
+	return 0;
+}

@@ -1,9 +1,28 @@
 /*
  * Dispatcher.cpp
  *
- *  Created on: Sep 8, 2019
- *      Author: keith
+ *  Created on: Feb 16, 2020
+ *      Author: Griffin Tritaik
  */
 
-//TODO fill in content
+#include "dispatcher.h"
 
+Dispatcher::Dispatcher(CPU &cpu){
+
+}
+
+Dispatcher::~Dispatcher(){
+
+}
+
+PCB Dispatcher::get_from_CPU(){
+	return null;
+}
+
+void Dispatcher::put_on_CPU(PCB  &process){
+
+}
+
+bool Dispatcher::isValidJobOnCPU(){
+	return false;
+}
