@@ -10,14 +10,6 @@
 
 #include "../includes/scheduler_RR.h"
 
-Scheduler_RR::Scheduler_RR(std::queue<PCB> &queue):Scheduler(queue,true,UNINITIALIZED){
-
-}
-
-Scheduler_RR::~Scheduler_RR(){
-
-}
-
 //override base class behaviour if necessary, otherwise call it
 bool  Scheduler_RR::time_to_switch_processes(int tick_count, PCB &p){
 	return false;

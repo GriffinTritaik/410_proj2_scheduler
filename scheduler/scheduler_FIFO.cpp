@@ -11,14 +11,6 @@
 
 #include "../includes/scheduler_FIFO.h"
 
-Scheduler_FIFO::Scheduler_FIFO(std::queue<PCB> &queue):Scheduler(queue,true,UNINITIALIZED){
-
-}
-
-Scheduler_FIFO::~Scheduler_FIFO(){
-
-}
-
 //override base class behaviour if necessary, otherwise call it
 bool  Scheduler_FIFO::time_to_switch_processes(int tick_count, PCB &p){
 	return false;

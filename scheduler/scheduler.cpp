@@ -7,28 +7,22 @@
 
 #include "../includes/scheduler.h"
 
-Scheduler::Scheduler(){
-
-}
-
-Scheduler::~Scheduler(){
-
-}
+using namespace std;
 
 //add a process, either a new one or one that
 //had been running on the CPU and has been preempted
-void Scheduler::add(PCB p){
+void Scheduler::add(PCB p) {
 
 }
 
 //get next process
-PCB Scheduler::getNext(){
+PCB Scheduler::getNext() {
 
 }
 
 //returns true if there are no  jobs in the readyQ
 //false otherwise
-bool Scheduler::isEmpty(){
+bool Scheduler::isEmpty() {
 	return false;
 }
 
@@ -38,7 +32,7 @@ bool Scheduler::isEmpty(){
 //returns:
 //true - switch processes
 //false - do not switch
-bool Scheduler::time_to_switch_processes(int tick_count, PCB &p){
+bool Scheduler::time_to_switch_processes(int tick_count, PCB &p) {
 	return false;
 }
 
