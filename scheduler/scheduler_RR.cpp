@@ -15,7 +15,8 @@ bool  Scheduler_RR::time_to_switch_processes(int tick_count, PCB &p){
 	return false;
 }
 
-//SRTF-preemptive - sort ready_q by remaining_cpu_time whenever add(PCB p) or time_to_switch_processes is called
+//SRTF-preemptive - sort ready_q by remaining_cpu_time whenever add(PCB p)
+//or time_to_switch_processes is called
 void Scheduler_RR::sort(){
 
 }
