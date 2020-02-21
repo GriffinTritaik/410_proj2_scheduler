@@ -35,11 +35,7 @@ bool Scheduler::isEmpty() {
 //true - switch processes
 //false - do not switch
 bool Scheduler::time_to_switch_processes(int tick_count, PCB &p) {
-	if (!preemptive && p.remaining_cpu_time <= 0){
-		return true;
-	}
-
-	if (tick_count % time_slice == 0) {
+	if (p.remaining_cpu_time <= 0){
 		return true;
 	}
 	return false;
